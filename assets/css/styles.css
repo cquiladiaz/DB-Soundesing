@@ -104,7 +104,7 @@ img{
 @media screen and (max-width: 768px){
     .nav__menu{
         position: fixed;
-        top: calc(var(--header-heigth) + 1.2rem);
+        top: calc(var(--header-heigth) + 1.1rem);
         right: -100%;
         width: 80%;
         height: 100%;
@@ -320,6 +320,16 @@ img{
 
 /*==== MEDIA QUERIES ====*/
 @media  screen and (min-width: 768px){
+    body{
+        margin: 0;
+    }
+    .section{
+        padding-top: 6rem;
+        padding-bottom: 7rem;
+    }
+    .nav{
+        height: calc(var(--header-heigth) + 1.5rem);
+    }
     .nav div img:nth-child(1){
         display: none;
     }
@@ -336,5 +346,10 @@ img{
     }
     .nav__toggle{
         display: none;
+    }
+
+    .home{
+        margin-top: 5rem;
+        padding: 8rem 0 2rem;
     }
 }
