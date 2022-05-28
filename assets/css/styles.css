@@ -74,12 +74,6 @@ img{
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
 }
-.bd-grid-home{
-    max-width: 1024px;
-    display: grid;
-    margin-left: var(--mb-6);
-    margin-right: var(--mb-6);
-}
 .l-header{
     width: 100%;
     position: fixed;
@@ -152,15 +146,20 @@ img{
 /*===== HOME =====*/
 .home{
     row-gap: 2rem;
-    padding: 5rem 0;
+    padding-top: 5rem;
 }
 .home__image img:first-child{
-    margin-bottom: var(--mb-2);
+    padding-bottom: var(--mb-2);
+}
+.home__image img:last-child{
+    width: 100%;
+    border-radius: 0 0 0 49px;
 }
 .home__title{
     margin-bottom: var(--mb-4);
 }
 .home__title h1{
+    padding-left: var(--mb-4);
     font-size: 73px;
     font-weight: 100;
     line-height: 70px;
@@ -170,6 +169,7 @@ img{
     color: var(--niceOrange);
 }
 .home p{
+    padding: 3rem 2rem 0 0;
     font-family: var(--secondary-font);
     font-weight: 300;
     text-align: end;
@@ -206,6 +206,26 @@ img{
     color: var(--fontGray);
 }
 
+/*===== QUOTE =====*/
+.quote__container{
+    max-width: 75%;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--dimGray);
+    border-radius: 8px ;
+}
+.quote__container p:first-child{
+    margin-bottom: var(--mb-1);
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.quote__container p:last-child{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 /*===== WORK =====*/
 .work__title{
     text-align: center;
@@ -240,6 +260,22 @@ img{
     margin-top: var(--mb-4);
 }
 
+/*===== STRATEGIC PARTNERSHIP =====*/
+.partnership-text > h2{
+    font-size: 3.3rem;
+    font-weight: 100;
+}
+.partnership-text > p{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.partnership-img{
+    margin-top: var(--mb-6);
+    /*-shadow-*/
+    -webkit-box-shadow: 0px 13px 47px -15px rgba(136,136,136,0.8);
+    -moz-box-shadow: 0px 13px 47px -15px rgba(136,136,136,0.8);
+    box-shadow: 0px 13px 47px -15px rgba(136,136,136,0.8);   
+}
 /*===== CLIENTS =====*/
 .clients{
     background-color: var(--dimGray);
@@ -314,6 +350,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5rem;
     padding:2.5rem 0;
     border-top: 1px solid var(--fakeBlack);
 }
@@ -324,9 +361,10 @@ img{
         margin: 0;
     }
     .section{
-        padding-top: 6rem;
-        padding-bottom: 7rem;
+        padding-top: 5rem;
+        padding-bottom: 6rem;
     }
+    /*=== NAV ===*/
     .nav{
         height: calc(var(--header-heigth) + 1.5rem);
     }
@@ -348,8 +386,56 @@ img{
         display: none;
     }
 
+    /*=== HOME ===*/
     .home{
+        display: flex;
+        justify-content: space-around;
         margin-top: 5rem;
         padding: 8rem 0 2rem;
     }
+    .home__title{
+        margin: 2.5rem 0;
+    }
+    .home__title p{
+        margin-top: 6rem;
+    }
+
+    /*=== About ===*/
+    .about__content{
+        display: flex;
+        align-items: center;
+    }
+    .about__content-text{
+        row-gap: 1rem;
+        max-width: 45%;
+        margin-left: 3rem;
+    }
+    /*=== WORK ===*/
+    .work__container{
+        grid-template-columns: 1fr 1fr ;
+        gap: 1.5rem;
+    }
+
+    /*===== STRATEGIC PARTNERSHIP =====*/
+    .partnership{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .partnership-img{
+        max-width: 50%;
+    }
+    /*=== CONTACT ===*/
+    .contact{
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    @media screen and (min-width: 1024px){
+        .bd-grid{
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .quote__container{
+            max-width: 40%;      }
 }
