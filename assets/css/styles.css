@@ -169,7 +169,7 @@ img{
     color: var(--niceOrange);
 }
 .home p{
-    padding: 3rem 2rem 0 0;
+    padding-top: 3rem;
     font-family: var(--secondary-font);
     font-weight: 300;
     text-align: end;
@@ -369,7 +369,7 @@ img{
     }
     .section{
         padding-top: 5rem;
-        padding-bottom: 6rem;
+        padding-bottom: 5rem;
     }
     /*=== NAV ===*/
     .nav{
