@@ -196,6 +196,9 @@ img{
 .about__content{
     row-gap: 2.3rem;
 }
+.about__content > picture > img{
+    border-radius: 0 0 30px 0;
+}
 .about__content-text{
     display: grid;
     row-gap: 2.3rem;
@@ -206,24 +209,28 @@ img{
     color: var(--fontGray);
 }
 
-/*===== QUOTE =====*/
-.quote__container{
-    max-width: 75%;
-    padding: 1rem;
-    margin: 0 auto;
+/*===== BUTTON =====*/
+.button-container{
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    font-size: 1.3rem;
     text-align: center;
-    background-color: var(--dimGray);
-    border-radius: 8px ;
 }
-.quote__container p:first-child{
-    margin-bottom: var(--mb-1);
+.button-container p{
     font-family: var(--secondary-font);
-    font-size: 1.4rem;
-    font-weight: 100;
+    font-weight: 300;
+    color: var(--fakeBlack);
 }
-.quote__container p:last-child{
-    font-size: 1.2rem;
+.button-container .button{
+    width: 90%;
+    height: 75px;    
+    padding-top: 1.58rem;
     font-weight: 700;
+    color: #FFF;
+    background-color: var(--fakeBlack);
 }
 
 /*===== WORK =====*/
@@ -389,18 +396,29 @@ img{
     /*=== HOME ===*/
     .home{
         display: flex;
-        justify-content: space-around;
+        justify-content:center;
+        
         margin-top: 5rem;
         padding: 8rem 0 2rem;
+    }
+    .home__image img:last-child{
+        width: 500px;
     }
     .home__title{
         margin: 2.5rem 0;
     }
-    .home__title p{
-        margin-top: 6rem;
+    .home__title h1{
+        font-size: 6rem;
+        line-height: 87px;
     }
-
+    .home__title p{
+        margin-top: 3rem;
+    }
+     
     /*=== About ===*/
+    .about__title{
+        font-size: 2.5rem;
+    }
     .about__content{
         display: flex;
         align-items: center;
@@ -410,10 +428,21 @@ img{
         max-width: 45%;
         margin-left: 3rem;
     }
+    /*=== BUTTON ===*/
+    .button-container .button{
+        max-width: 250px;
+    }
+
     /*=== WORK ===*/
+    .work__title h3{
+        font-size: 2.2rem;
+    }
+    .work__title h2{
+        font-size: 6rem;
+    }
     .work__container{
         grid-template-columns: 1fr 1fr ;
-        gap: 1.5rem;
+        gap: 4rem;
     }
 
     /*===== STRATEGIC PARTNERSHIP =====*/
@@ -425,17 +454,29 @@ img{
     .partnership-img{
         max-width: 50%;
     }
+
+    /*===== CLIENTS =====*/
+    .clients__title h4{
+        font-size: 2rem;
+    }
+    .clients__title h3{
+        font-size: 2.5rem;
+    }
     /*=== CONTACT ===*/
     .contact{
         margin: 0 auto;
-        max-width: 500px;
+        max-width: 550px;
+    }
+    .contact__title h2{
+        font-size: 3rem;
     }
 
     @media screen and (min-width: 1024px){
         .bd-grid{
           margin-left: auto;
           margin-right: auto;
-        }
+        }  
         .quote__container{
-            max-width: 40%;      }
+            max-width: 40%;
+        }
 }
