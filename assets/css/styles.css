@@ -228,7 +228,7 @@ img{
     width: 90%;
     height: 75px;    
     padding-top: 1.58rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #FFF;
     background-color: var(--fakeBlack);
 }
