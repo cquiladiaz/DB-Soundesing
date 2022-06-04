@@ -225,9 +225,9 @@ img{
     color: var(--fakeBlack);
 }
 .button-container .button{
-    width: 90%;
-    height: 75px;    
-    padding-top: 1.58rem;
+    width: 80%;
+    height: 70px;    
+    padding-top: 1.4rem;
     font-weight: 400;
     color: #FFF;
     background-color: var(--fakeBlack);
@@ -276,8 +276,9 @@ img{
     font-size: 1.6rem;
     font-weight: 700;
 }
-.partnership-img{
+.partnership-img img{
     margin-top: var(--mb-6);
+    border-radius: 8%;
     /*-shadow-*/
     -webkit-box-shadow: 0px 13px 47px -15px rgba(136,136,136,0.8);
     -moz-box-shadow: 0px 13px 47px -15px rgba(136,136,136,0.8);
